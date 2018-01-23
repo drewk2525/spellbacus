@@ -1,0 +1,179 @@
+body {
+  font-family: "Arial", sans-serif; }
+
+#wrapper {
+  width: 100%;
+  text-align: center; }
+  #wrapper h1, #wrapper h2 {
+    font-family: 'Audiowide', cursive; }
+  #wrapper fieldset {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 40px; }
+    #wrapper fieldset button {
+      display: none; }
+    #wrapper fieldset button:first-of-type {
+      display: block; }
+  #wrapper header {
+    width: 960px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/logo.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative; }
+    #wrapper header button.home {
+      width: 140px;
+      height: 30px;
+      margin-left: -70px;
+      font-size: 1em;
+      border-radius: 6px;
+      background-color: #29abe2;
+      border: none;
+      color: #1b1464;
+      position: absolute;
+      left: 50%;
+      bottom: 20px; }
+    #wrapper header button.home:hover {
+      border: 1px solid #1b1464; }
+    #wrapper header .login {
+      float: right; }
+      #wrapper header .login form {
+        margin-top: 35px; }
+        #wrapper header .login form input {
+          margin-bottom: 6px;
+          border: 1px solid #1b1464;
+          height: 18px;
+          padding-left: 5px; }
+        #wrapper header .login form input[type='submit'] {
+          float: right;
+          background-color: #29abe2;
+          width: 80px;
+          height: 22px;
+          border-radius: 6px;
+          border: none;
+          color: #1b1464;
+          font-size: 0.9em; }
+        #wrapper header .login form input[type='submit']:hover {
+          border: 1px solid #1b1464; }
+    #wrapper header .user_data {
+      margin-top: 70px;
+      text-align: right; }
+      #wrapper header .user_data select {
+        margin-bottom: 15px; }
+      #wrapper header .user_data a {
+        color: #0071bc;
+        font-size: 0.8em;
+        text-decoration: none;
+        margin: auto 10px; }
+      #wrapper header .user_data a:hover {
+        text-decoration: underline; }
+  #wrapper #bodyWrapper {
+    border-top: 3px solid #1b1464;
+    min-height: 500px; }
+    #wrapper #bodyWrapper form.spells {
+      text-align: left;
+      width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      line-height: 35px; }
+      #wrapper #bodyWrapper form.spells textarea {
+        width: 640px;
+        height: 160px; }
+      #wrapper #bodyWrapper form.spells input[type='number'] {
+        width: 40px; }
+      #wrapper #bodyWrapper form.spells input[type 'checkbox'] {
+        margin-left: 20px; }
+    #wrapper #bodyWrapper p.spell_description:first-of-type {
+      width: 700px;
+      margin: 10px 0 10px 75px; }
+      #wrapper #bodyWrapper p.spell_description:first-of-type em {
+        font-weight: bold;
+        margin-right: 5px; }
+      #wrapper #bodyWrapper p.spell_description:first-of-type span {
+        display: block;
+        margin-bottom: 3px; }
+        #wrapper #bodyWrapper p.spell_description:first-of-type span span {
+          display: inline-block;
+          margin-right: 5px; }
+        #wrapper #bodyWrapper p.spell_description:first-of-type span span.caster_level {
+          margin-right: 15px; }
+    #wrapper #bodyWrapper p.spell_description table {
+      border-collapse: collapse;
+      margin: 20px auto; }
+      #wrapper #bodyWrapper p.spell_description table td, #wrapper #bodyWrapper p.spell_description table th {
+        border: 2px solid #1b1464;
+        min-width: 30px;
+        padding: 5px;
+        height: 30px; }
+      #wrapper #bodyWrapper p.spell_description table th {
+        background-color: #ccddee;
+        text-align: center; }
+      #wrapper #bodyWrapper p.spell_description table tr:hover {
+        background-color: #dee8ee; }
+    #wrapper #bodyWrapper p:first-of-type {
+      margin-top: 40px; }
+    #wrapper #bodyWrapper button {
+      background-color: #29abe2;
+      width: 180px;
+      height: 40px;
+      font-size: 1.4em;
+      color: #1b1464;
+      border-radius: 12px;
+      border: none;
+      margin: 20px 50px 20px 50px; }
+    #wrapper #bodyWrapper button:hover {
+      border: 1px solid #1b1464; }
+    #wrapper #bodyWrapper form.large {
+      margin: 40px auto 0 auto;
+      position: relative;
+      width: 960px; }
+      #wrapper #bodyWrapper form.large input, #wrapper #bodyWrapper form.large button.home {
+        width: 200px;
+        height: 30px;
+        margin-bottom: 20px;
+        font-size: 1em; }
+      #wrapper #bodyWrapper form.large input[type='submit'], #wrapper #bodyWrapper form.large button.home {
+        border-radius: 6px;
+        background-color: #29abe2;
+        border: none;
+        color: #1b1464; }
+      #wrapper #bodyWrapper form.large input[type='submit']:hover, #wrapper #bodyWrapper form.large button.home:hover {
+        border: 1px solid #1b1464; }
+      #wrapper #bodyWrapper form.large button.home {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0; }
+  #wrapper footer {
+    margin-top: 20px;
+    border-top: 3px solid #1b1464;
+    padding-top: 20px;
+    font-size: 0.8em; }
+  #wrapper form.character {
+    margin-top: 30px; }
+    #wrapper form.character .character_details, #wrapper form.character .spell_list {
+      margin: 0 40px;
+      width: 150px; }
+    #wrapper form.character .spell_list {
+      margin-bottom: 0;
+      height: 26px;
+      font-size: 0.9em;
+      width: 200px;
+      margin-top: 15px; }
+    #wrapper form.character table.spell {
+      border-collapse: collapse;
+      margin: 20px auto; }
+      #wrapper form.character table.spell td, #wrapper form.character table.spell th {
+        border: 2px solid #1b1464;
+        min-width: 30px;
+        padding: 5px;
+        height: 30px; }
+      #wrapper form.character table.spell th {
+        background-color: #ccddee; }
+      #wrapper form.character table.spell tr:hover {
+        background-color: #dee8ee; }

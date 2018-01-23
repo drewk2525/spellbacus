@@ -1,0 +1,231 @@
+$blue: #0071BC;
+$light_blue: #29ABE2;
+$dark_blue: #1B1464;
+$grey_blue: #CDE;
+$light_grey_blue: #DEE8EE;
+body{
+    font-family: "Arial", sans-serif;
+}
+#wrapper {
+    width: 100%;
+    text-align: center;
+    h1, h2{
+        font-family: 'Audiowide', cursive;
+    }
+    fieldset{
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        margin-bottom: 40px;
+        button{
+            display: none;
+        }
+        button:first-of-type{
+            display: block;
+        }
+    }
+    header{
+        width: 960px;
+        height: 125px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('../images/logo.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        position: relative;
+        button.home{
+            width: 140px;
+            height: 30px;
+            margin-left: -70px;
+            font-size: 1em;
+            border-radius: 6px;
+            background-color: $light_blue;
+            border: none;
+            color: $dark_blue;
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+        }
+        button.home:hover{
+            border: 1px solid $dark_blue;
+        }
+        .login{
+            float: right;
+            form{
+                margin-top: 35px;
+                input{
+                    margin-bottom: 6px;
+                    border: 1px solid $dark_blue;
+                    height: 18px;
+                    padding-left: 5px;
+                }
+                input[type='submit']{
+                    float:right;
+                    background-color: $light_blue;
+                    width: 80px;
+                    height: 22px;
+                    border-radius: 6px;
+                    border: none;
+                    color: $dark_blue;
+                    font-size: 0.9em;
+                }
+                input[type='submit']:hover{
+                    border: 1px solid $dark_blue;
+                }
+            }
+        }
+        .user_data{
+            margin-top: 70px;
+            text-align: right;
+            select{
+                margin-bottom: 15px;
+            }
+            a{
+                color: $blue;
+                font-size: 0.8em;
+                text-decoration: none;
+                margin: auto 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    #bodyWrapper {
+        border-top: 3px solid $dark_blue;
+        min-height: 500px;
+        form.spells{
+            text-align:left;
+            width:650px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            line-height: 35px;
+            textarea{
+                width: 640px;
+                height: 160px;
+            }
+            input[type='number']{
+                width: 40px;
+            }
+            input[type'checkbox']{
+                margin-left: 20px;
+            }
+        }
+        p.spell_description:first-of-type{
+            width: 700px;
+            margin: 10px 0 10px 75px;
+            em{
+                font-weight: bold;
+                margin-right: 5px;
+            }
+            span{
+                display: block;
+                margin-bottom: 3px;
+                span{
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+                span.caster_level{
+                    margin-right: 15px;
+                }
+            }
+        }
+        p.spell_description table{
+            border-collapse: collapse;
+            margin: 20px auto;
+            td, th{
+                border: 2px solid $dark_blue;
+                min-width: 30px;
+                padding: 5px;
+                height: 30px;
+            }
+            th{
+                background-color: $grey_blue;
+                text-align: center;
+            }
+            tr:hover{
+                background-color: $light_grey_blue;
+            }
+        }
+        p:first-of-type{
+            margin-top: 40px;
+        }
+        button{
+            background-color: $light_blue;
+            width: 180px;
+            height: 40px;
+            font-size: 1.4em;
+            color: $dark_blue;
+            border-radius: 12px;
+            border:none;
+            margin: 20px 50px 20px 50px;
+        }
+        button:hover{
+            border: 1px solid $dark_blue;
+        }
+        form.large{
+            margin: 40px auto 0 auto;
+            position: relative;
+            width: 960px;
+            input, button.home{
+                width: 200px;
+                height: 30px;
+                margin-bottom: 20px;
+                font-size: 1em;
+            }
+            input[type='submit'], button.home{
+                border-radius: 6px;
+                background-color: $light_blue;
+                border: none;
+                color: $dark_blue;
+            }
+            input[type='submit']:hover, button.home:hover{
+                border: 1px solid $dark_blue;
+            }
+            button.home{
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin:0;
+            }
+        }
+    }
+    footer{
+        margin-top: 20px;
+        border-top: 3px solid $dark_blue;
+        padding-top: 20px;
+        font-size: 0.8em;
+    }
+    form.character{
+        margin-top: 30px;
+        .character_details, .spell_list{
+            margin: 0 40px;
+            width: 150px;
+        }
+        .spell_list{
+            margin-bottom: 0;
+            height: 26px;
+            font-size: 0.9em;
+            width: 200px;
+            margin-top: 15px;
+        }
+        table.spell{
+            border-collapse: collapse;
+            margin: 20px auto;
+            td, th{
+                border: 2px solid $dark_blue;
+                min-width: 30px;
+                padding: 5px;
+                height: 30px;
+            }
+            th{
+                background-color: $grey_blue;
+            }
+            tr:hover{
+                background-color: $light_grey_blue;
+            }
+        }
+    }
+}
